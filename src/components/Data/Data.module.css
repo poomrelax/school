@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Poetsen+One&display=swap');
+
+.container{
+  background: #000218;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  color: #fff;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container .data{
+    background: #fff;
+    color: #000;
+    min-height: 20%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    & h3{
+        font-family: "Poetsen One", sans-serif;
+    }
+
+    & p{
+        margin-top: 1rem;
+        font-size: 12px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+        margin-top: 2rem;
+    }
+}
