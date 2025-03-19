@@ -32,6 +32,22 @@
         font-size: 12px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
+    & button {
+        margin-top: 2rem;
+        padding: 10px;
+        border: 2px solid rgb(184, 9, 9);
+        background: red;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    & .btn_loadding{
+        margin-top: 2rem;
+        font-weight: 700;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -39,4 +55,12 @@
         display: block;
         margin-top: 2rem;
     }
+}
+
+.loadding {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

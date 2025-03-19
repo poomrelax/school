@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import AppStle from './App.module.css'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import FadeLoader from "react-spinners/FadeLoader";
+import Nav from './components/nav/Nav'
 
 function App() {
   const url = 'https://node-api-production-d005.up.railway.app/school'
@@ -30,8 +31,16 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    const user = localStorage.getItem("user")
+    if(!user) {
+      localStorage.setItem("user", "user")
+    }
+  }, [])
+
   return (
     <>
+      <Nav/>
       <ToastContainer/>
       <div className={AppStle.container}>
         <div className={AppStle.content}>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Poetsen+One&display=swap');
+
+.container{
+    background: green;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & h3 {
+        color: #fff;
+        font-family: "Poetsen One";
+        margin-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        cursor: pointer;
+    }
+}
+
+.container .detall {
+    margin-right: 2rem;
+
+    & a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;    
+        cursor: pointer;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
